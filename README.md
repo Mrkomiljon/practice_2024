@@ -1,4 +1,4 @@
-# practice_2024 Repository
+# practice_2024
 
 Bu repository GitHub'ga folder qo'shish jarayonini namoyish etish uchun yaratilgan.
 
