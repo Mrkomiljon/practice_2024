@@ -1,4 +1,4 @@
-# practice_2024 Repository
+# practice_2024
 
 Bu repository GitHub'ga folder qo'shish jarayonini namoyish etish uchun yaratilgan.
 
@@ -40,6 +40,30 @@ Run
 ```
 to set your account's default identity.
 Omit --global to set the identity only in this repository.
+```bash
+git push origin main
+```
+
+Faylni Lokalda O'chirish
+
+Endi o'chirmoqchi bo'lgan faylingizni toping va uni git rm komandasi yordamida o'chiring:
+
+```bash
+
+git rm path/to/your/file.txt
+```
+
+O'zgarishlarni Commit Qilish
+
+Faylni o'chirganingizdan so'ng, bu o'zgarishni commit qiling:
+
+```bash
+git commit -m "Remove file.txt
+```
+O'zgarishlarni GitHub'ga Push Qilish
+
+O'zgartirilgan commit'ni GitHub repositoriyangizga yuboring:
+
 ```bash
 git push origin main
 ```
