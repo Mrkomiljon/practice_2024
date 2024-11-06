@@ -67,3 +67,28 @@ O'zgartirilgan commit'ni GitHub repositoriyangizga yuboring:
 ```bash
 git push origin main
 ```
+__  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __ __  __  __  __  __  __
+## 1. GitHub LFS ni o‘rnatish (katta fayllar uchun)
+Agar yuklayotgan .pdf yoki .py fayllaringiz katta hajmda bo‘lsa, GitHub LFS dan foydalanish tavsiya etiladi:
+
+```bash
+git lfs install
+```
+2. .pdf fayllarni GitHub LFS orqali kuzatishga qo‘shish
+GitHub LFS ni faqat katta hajmli fayllarga qo‘llaniladi. Agar .pdf fayllaringiz kattaroq bo‘lsa, kuzatishga qo‘shishingiz mumkin:
+
+```bash
+git lfs track "*.pdf"
+```
+.py fayllar odatda katta hajmda bo‘lmaganligi sababli, ularni oddiy git orqali yuklash kifoya qiladi.
+
+3. lesson papkasini qo‘shish va yuklash
+lesson papkasidagi fayllarni GitHub-ga yuklash uchun quyidagi buyruqlarni bajaring:
+
+```bash
+git init                          # Repositoriyani ishga tushirish (faqat birinchi marta kerak)
+git add lesson/                   # lesson papkasidagi barcha fayllarni qo‘shish
+git commit -m "Lesson papkasini yuklamoqdamiz"
+git remote add origin <repository-url>  # GitHub repositoriya URL manzilini qo‘shish
+git push -u origin main           # Yaratilgan commit-ni yuklash
+```
